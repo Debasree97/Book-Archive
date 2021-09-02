@@ -27,11 +27,17 @@
                 </form>
             </div>
         </nav>
+        <!-- Valid Search -->
+        <div id="result-number" class="pt-2 text-center">
+        </div>
+        <!-- Invalid Search -->
+        <div id="no-result" class="text-center">
+        </div>
     </header>
 
     <main>
         <!-- Main Body Before Searching -->
-        <section>
+        <section id="home-default">
             <h1 class="text-center m-5">The Biggest Book Archive</h1>
 
             <article class="w-75 fst-italic d-flex flex-column mx-auto p-3">
@@ -45,11 +51,13 @@
 
                 <p class="text-end pe-5 fs-5"><span>&#8212</span> Charles W. Eliot</p>
             </article>
-
-            <div class="d-flex justify-content-center">
-                <button onclick="searchBook()" class="btn btn-secondary fs-4" type="button">Browse a Book</button>
-            </div>
         </section>
+
+        <!-- Result Card After Searching -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-5 mt-5 px-5">
+        </div>
+
+
     </main>
 
     <footer class="mt-5"></footer>
